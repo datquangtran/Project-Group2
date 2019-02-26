@@ -1,0 +1,43 @@
+var product ={
+	"iphoneX" :{
+		"man_hinh": "5.8 inchs(2436 x 1125 pixel) Super Retina HD",
+		"camera" : "	7.0 MP/ Dual 12.0 MP",
+		"ram":"3 GB",
+		"bo_nho_trong":"64 GB",
+		"he_dieu_hanh":"IOS 11",
+		"kich_thuoc":"143.6 x 70.9 x 7.7 mm",
+	},
+	"iphoneXS" :{
+		"man_hinh": "5.8 inchs",
+		"camera" : "7.0 MP/ Dual Camera 12.0 MP",
+		"ram":"4 GB",
+		"bo_nho_trong":"64 GB",
+		"he_dieu_hanh":"IOS 12",
+		"kich_thuoc":"143.6 x 70.9 x 7.7 mm",
+	},
+	"iphoneXS MAX" :{
+		"man_hinh": "6.5 inchs",
+		"camera" : "7.0 MP/ Dual Camera 12.0 MP",
+		"ram":"4 GB",
+		"bo_nho_trong":"64 GB",
+		"he_dieu_hanh":"IOS 12",
+		"kich_thuoc":"	157.5 x 77.4 x 7.7 mm",
+	},
+	"iphone8 plus": {
+		"man_hinh": "5.5 inchs HD Retina",
+		"camera" : "7.0 MP/ Dual Camera 12.0 MP",
+		"ram":"3 GB",
+		"bo_nho_trong":"64 GB",
+		"he_dieu_hanh":"IOS 11",
+		"kich_thuoc":"158.4 x 78.1 x 7.5 mm",
+	},
+	"iPadPro" :{
+		"man_hinh": "12.9 inches ",
+		"camera" : "7.0 MP/ Dual Camera 12.0 MP",
+		"ram":"3 GB",
+		"bo_nho_trong":"64 GB",
+		"he_dieu_hanh":"IOS 11",
+		"kich_thuoc":"158.4 x 78.1 x 7.5 mm",
+
+	}
+}
