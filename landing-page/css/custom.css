@@ -1,0 +1,135 @@
+
+
+
+body {
+
+}
+.carousel-item>img {
+	max-height: 560px;
+}
+
+.lul {
+	justify-self: center;
+	width: 70%;
+	align-self: end;
+	margin-bottom: 20px;
+	color: #fff;
+	
+}
+
+.chipset {
+	background-image: url("chip.jpeg");
+	background-position: center;
+	width: 100%;
+	height: 500px;
+	display: grid;
+}
+
+#h4-performance {
+	text-align: center;
+	font-size: 30px;
+}
+
+.design {
+	display: grid;
+	height: 600px;
+	width: 100%;
+	background-position: center;
+	background-image: url("img/thietke.jpg");
+	color: yellow;
+	font-size: 30px;
+}
+
+
+.details {
+	text-align: center;
+}
+
+.chipset {
+	display: grid;
+	height: 600px;
+	width: 100%;
+	background-position: center;
+	background-image: url("img/chipset.png");
+	color: yellow;
+	font-size: 30px;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
+	margin: 2rem 0 2rem 0;
+	color: white;
+}
+
+.section_3 {
+	background-color: #444444;
+}
+
+.list-unstyled  {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+	background: #B5B5B5;
+	opacity: 0.5;
+
+}
+img {
+	overflow:hidden;
+}
+.card:hover {
+	 transform: scale(1.04);
+    transition: all ease-in-out 0.5s;
+    background-color: #3e8e41;
+    color: white;
+}
+
+
+.abc{
+	border-right: 1px solid black	;
+	padding-right: 5px;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+
+}
+.footer-container{
+	font-size: 0.7rem;
+	background-color: #444444;
+}
+hr{
+	color: black;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid white;
+}
+.about-apple {
+	color: #fff;
+}
+.footer-container a{
+	color: white;
+}
+.footer-container h3{
+	color: white;
+}
+.sec2 p{
+	color: white;
+}
+
+.card-title {
+	color: #000;
+}
+
+.card-text {
+	color:#000;
+}
+
+.card-subtitle p{
+	color: #000;
+}
