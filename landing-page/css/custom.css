@@ -1,11 +1,16 @@
 
-
-
-body {
+body{
+	font-family: 'Open San;s', sans-serif;
+	background-color: #f4f6f8;
 
 }
 .carousel-item>img {
 	max-height: 560px;
+}
+
+.carousel-inner h5 {
+	font-size: 30px;
+	color: #000;
 }
 
 .lul {
@@ -17,27 +22,28 @@ body {
 	
 }
 
-.chipset {
+/*.chipset {
 	background-image: url("chip.jpeg");
 	background-position: center;
 	width: 100%;
 	height: 500px;
 	display: grid;
-}
+}*/
 
 #h4-performance {
 	text-align: center;
 	font-size: 30px;
 }
 
-.design {
+#landing-iphone {
 	display: grid;
-	height: 600px;
+	height: 800px;
 	width: 100%;
 	background-position: center;
-	background-image: url("img/thietke.jpg");
+	background-image: url("img/iphone.jpg");
 	color: yellow;
 	font-size: 30px;
+
 }
 
 
@@ -45,9 +51,9 @@ body {
 	text-align: center;
 }
 
-.chipset {
+#landing-ipad {
 	display: grid;
-	height: 600px;
+	height: 700px;
 	width: 100%;
 	background-position: center;
 	background-image: url("img/chipset.png");
@@ -55,8 +61,17 @@ body {
 	font-size: 30px;
 }
 
+#landing-aw {
+	display: grid;
+	height: 800px;
+	width: 100%;
+	background-position: center;
+	background-image: url("img/aw-4.png");
+	color: yellow;
+	font-size: 30px;
+}
 
-.grid-container {
+/*.grid-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	grid-row-gap: 2rem;
@@ -64,7 +79,7 @@ body {
 	margin: 2rem 0 2rem 0;
 	color: white;
 }
-
+*/
 .section_3 {
 	background-color: #444444;
 }
@@ -83,10 +98,11 @@ img {
 	overflow:hidden;
 }
 .card:hover {
-	 transform: scale(1.04);
-    transition: all ease-in-out 0.5s;
-    background-color: #3e8e41;
-    color: white;
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
+	-moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,75); 
+	background-color: #FF99FF;
+	
 }
 
 
@@ -94,21 +110,19 @@ img {
 	border-right: 1px solid black	;
 	padding-right: 5px;
 }
-body{
-	font-family: 'Open Sans', sans-serif;
 
-}
 .footer-container{
 	font-size: 0.7rem;
 	background-color: #444444;
 }
-hr{
+ hr{
 	color: black;
     margin-top: 6px;
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid white;
 }
+
 .about-apple {
 	color: #fff;
 }
@@ -132,4 +146,175 @@ hr{
 
 .card-subtitle p{
 	color: #000;
+}
+
+.ip-banner {
+	background-image: url("img/banner/banner.png") ;
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	line-height: 30px;
+}
+
+.ip-details {
+	justify-self: center;
+	width: 70%;
+	align-self: end;
+	margin-bottom: 50px;
+	color: #fff;
+	text-align: center;
+	margin: 100px 0px 0px 20px;
+	font-size: 30px;
+
+}
+
+.danhmuc {
+	margin-top: 10px;
+	background-image: url("img/ip-bg.jpg");
+	border-radius: 12px;
+}
+
+/*----- Tabs -----*/
+.tabs {
+	width:100%;
+	display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+	.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+}
+
+.tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background:#7FB5DA;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+	background:#66CCCC;
+	color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:	#fff;
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
+
+/*----------------Chinh sach ban hang----------------------*/
+
+
+.promo-area {
+  background:#fbfbfb;
+  color: #fff;
+  padding: 40px 0 40px;
+}
+.promo-area .zigzag-bottom, .brands-area .zigzag-bottom{background: #f4f4f4}
+.single-promo {
+    font-size: 25px;
+    font-weight: 200;
+    padding: 20px 10px;
+    text-align: center;
+}
+.single-promo i {
+  font-size: 50px;
+}
+
+.single-promo:hover {color: #fff;background: #222;}
+.promo1 { background:#5a88ca;}
+.promo2 { background:#ffd900;}
+.promo3 { background:#fa8072;}
+.promo4 { background:#4abebd;}
+.section-title {
+  font-family: "Raleway",sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*Chinh sach ban hang done*/
+
+/*Why Choose us*/
+#about {
+  background-color: #fff;
+  min-height: 340px;
+  padding-bottom: 100px;
+  margin-top: 15px;
+  height: 100%;
+}
+.about-us h3 {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d5d5d5;
+  position: relative;
+
+}
+
+.bullets ul {
+  overflow: hidden;
+}
+
+ul.bullets li {
+    float: left;
+    width: 370px;
+    padding-left: 70px;
+    margin: 0 30px 55px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+
+.about-us h6 {
+  color: #49555c;
+  font-size: 16px;
+}
+
+.title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d5d5d5;
+    position: relative;
+    color: #000;
+}
+
+.about-us .icon {
+  position: absolute;
+    top: 0;
+    right: 315px;
+    fill: #00b0ff;
+}
+
+.about-us .title {
+  line-height: 60px;
 }
