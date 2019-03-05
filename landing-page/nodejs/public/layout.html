@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout Demo</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"> </script>
+
+</head>
+<body>
+	<table class="table table-bordered table-hover table-striped" id="list_products">
+		<thead>
+			<th>Ten SV</th>
+			<th>Ngay sinh</th>
+			<th>Lop hoc</th>
+			<th>Diem thi</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<th rowspan="3"></th>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Nguyen Tan Dat</td>
+				<td>01/01/1999</td>
+				<td>8.0</td>
+			</tr>
+
+			<tr>
+				<td>Tran Quang Dat</td>
+				<td>02/04/1996</td>
+				<td>8.0</td>
+			</tr>
+
+
+		</tbody>
+
+	</table>
+
+	<script type="text/javascript">
+		var url = '/list_products';
+		$.ajax({
+			url: '/list_products',
+			method: "GET",
+			succcess: function(result) {
+				var products = result.data;
+				var content_html = '';
+				for(var i = 0; i < products.length; i++) {
+					content_html += '<table class="table table-bordered table-hover table-striped">';
+					content_html += '<thead>';
+					content_html +=  '<th>Ten SV</th>';
+					content_html += '<th>Ngay sinh</th>';
+					content_html += '<th>Lop hoc</th>';
+					content_html += '<th>Diem thi</th>';
+					content_html += '</thead>';
+					content_html += '<tbody>';
+					content_html += 'tr';
+					content_html += '<td>' + products[i].name +'</td>';
+					content_html += '<td>' + products[i].birth + '</td>';
+					content_html += '<td>' + products[i].mark + '</td>';
+					content_html += '</tr>';
+					content_html += '</tbody>';
+				}
+				document.getElementById("list_products").innerHTML = content_html;
+			} 
+		})
+	</script>
+</body>
+</html>

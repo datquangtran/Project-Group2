@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index-2.html">Trang chu <i class="fab fa-apple fa-2x" style="color: #fff;"></i></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#landing-iphone">iPhone</a></li>
+          <li><a href="#landing-ipad">iPad</a></li>
+          <li><a href="#landing-aw">Apple watch</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+
+
+
+
+
+
+	<div id="landing-iphone" class="container-fluid">
+	  <div class="row">
+	        <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.0s">
+	            <h3>Màn hình sắc nét</h3>
+	        </div>
+	        <div class="design img-fluid wow fadeInLeft" id="iphone" data-wow-delay="0.7s">
+	          <div class="lul wow fadeInDown" data-wow-delay="1.0s">
+	            <div class="details">Super Retina. In big and bigger. The custom OLED displays on iPhone XS deliver the most accurate color in the industry, HDR, and true blacks. And iPhone XS Max has our largest display ever on an iPhone.</div>
+	          </div>
+	        </div>
+	  </div>
+	</div>
+	<div id="landing-ipad" class="container-fluid"> 
+	  <div class="row">
+		  <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+		
+		  </div>
+		  <div class="chipset img-fluid wow fadeInRight" data-wow-delay="0.7s">
+		  	<div class="lul wow fadeInDown"data-wow-delay="0.5s">
+		      
+		    </div>
+	  	  </div>
+	  </div>
+	</div>
+	<div id="landing-aw" class="container-fluid">
+	   <div class="row">
+	        <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.0s">
+	            <h3></h3>
+	        </div>
+	        <div class="design img-fluid wow fadeInLeft" id="iphone" data-wow-delay="0.7s">
+	          <div class="lul wow fadeInDown" data-wow-delay="1.0s">
+	            <div class="details"></div>
+	          </div>
+	        </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script>
+$(document).ready(function(){
+  $('body').scrollspy({target: ".navbar", offset: 50});
+  $("#myNavbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+</body>
+</html>
