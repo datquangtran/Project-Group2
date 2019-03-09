@@ -22,14 +22,6 @@ body{
 	
 }
 
-/*.chipset {
-	background-image: url("chip.jpeg");
-	background-position: center;
-	width: 100%;
-	height: 500px;
-	display: grid;
-}*/
-
 #h4-performance {
 	text-align: center;
 	font-size: 30px;
@@ -53,10 +45,10 @@ body{
 
 #landing-ipad {
 	display: grid;
-	height: 700px;
+	height: 800px;
 	width: 100%;
 	background-position: center;
-	background-image: url("img/chipset.png");
+	background-image: url("img/Banner-MBP-2018.png");
 	color: yellow;
 	font-size: 30px;
 }
@@ -101,7 +93,7 @@ img {
 	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
 	-moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
 	box-shadow: -1px 9px 40px -12px rgba(0,0,0,75); 
-	background-color: #FF99FF;
+	background-color: #f4f6f8;
 	
 }
 
@@ -115,12 +107,12 @@ img {
 	font-size: 0.7rem;
 	background-color: #444444;
 }
- hr{
+hr{
 	color: black;
-    margin-top: 6px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid white;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid white;
 }
 
 .about-apple {
@@ -182,7 +174,7 @@ img {
 
 /*----- Tab Links -----*/
 /* Clearfix */
-	.tab-links:after {
+.tab-links:after {
 	display:block;
 	clear:both;
 	content:'';
@@ -241,10 +233,10 @@ li.active a, li.active a:hover {
 }
 .promo-area .zigzag-bottom, .brands-area .zigzag-bottom{background: #f4f4f4}
 .single-promo {
-    font-size: 25px;
-    font-weight: 200;
-    padding: 20px 10px;
-    text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  padding: 20px 10px;
+  text-align: center;
 }
 .single-promo i {
   font-size: 50px;
@@ -286,12 +278,12 @@ li.active a, li.active a:hover {
 }
 
 ul.bullets li {
-    float: left;
-    width: 370px;
-    padding-left: 70px;
-    margin: 0 30px 55px 0;
-    position: relative;
-    text-decoration: none;
+  float: left;
+  width: 370px;
+  padding-left: 70px;
+  margin: 0 30px 55px 0;
+  position: relative;
+  text-decoration: none;
 }
 
 
@@ -301,20 +293,176 @@ ul.bullets li {
 }
 
 .title {
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #d5d5d5;
-    position: relative;
-    color: #000;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d5d5d5;
+  position: relative;
+  color: #000;
 }
 
 .about-us .icon {
   position: absolute;
-    top: 0;
-    right: 315px;
-    fill: #00b0ff;
+  top: 0;
+  right: 315px;
+  fill: #00b0ff;
 }
 
 .about-us .title {
   line-height: 60px;
 }
+
+/* Chi tiet san pham */
+
+
+.preview {  
+  display: -webkit-box;   
+  display: -webkit-flex;  
+  display: -ms-flexbox;   
+  display: flex;  
+  -webkit-box-orient: vertical;   
+  -webkit-box-direction: normal;  
+  -webkit-flex-direction: column; 
+  -ms-flex-direction: column; 
+  flex-direction: column;
+} 
+
+@media screen and (max-width: 996px) { 
+  .preview { 
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.preview-thumbnail.nav-tabs {   
+  border: none;   
+  margin-top: 15px;
+}
+
+.preview-thumbnail.nav-tabs li {    
+  width: 18%; 
+  margin-right: 2.5%;
+}
+
+.preview-thumbnail.nav-tabs li img {    
+  max-width: 100%;    
+  display: block;
+}
+
+.preview-thumbnail.nav-tabs li a {  
+  padding: 0; 
+  margin: 0;  
+  cursor:pointer;
+}
+
+.preview-thumbnail.nav-tabs li:last-of-type {   
+  margin-right: 0;
+}
+
+.tab-content {  
+  overflow: hidden;
+}
+
+.tab-content img {  
+  width: 100%;    
+  -webkit-animation-name: opacity;    
+  animation-name: opacity; 
+  -webkit-animation-duration: .3s; 
+  animation-duration: .3s;
+}
+
+.card { 
+  margin-top: 0px;    
+  background: #eee;   
+  padding: 3em;   
+  line-height: 1.5em;
+} 
+
+@media screen and (min-width: 997px) { 
+  .wrapper { 
+    display: -webkit-box; 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex;
+  }
+}
+
+.details {  
+  display: -webkit-box;
+  display: -webkit-flex;  
+  display: -ms-flexbox;   
+  display: flex;  
+  -webkit-box-orient: vertical;   
+  -webkit-box-direction: normal;  
+  -webkit-flex-direction: column; 
+  -ms-flex-direction: column; 
+  flex-direction: column;
+}
+
+.colors {   
+  -webkit-box-flex: 1;    
+  -webkit-flex-grow: 1;   
+  -ms-flex-positive: 1;   
+  flex-grow: 1;
+}
+
+.product-title, .price, .sizes, .colors {   
+  text-transform: UPPERCASE;  
+  font-weight: bold;
+}
+
+.checked, .price span { 
+  color: #ff9f1a;
+}
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {  
+  margin-bottom: 15px;
+}
+
+.product-title {    
+  margin-top: 0;
+}
+
+.size {
+  margin-right: 10px;
+}
+
+.size:first-of-type {   
+  margin-left: 40px;
+}
+
+.color {    
+  display: inline-block;  
+  vertical-align: middle; 
+  margin-right: 10px; 
+  height: 2em;    
+  width: 2em; 
+  border-radius: 2px;
+}
+
+.color:first-of-type {  
+  margin-left: 20px;
+}
+
+.add-to-cart, .like {   
+  background: #ff9f1a;    
+  padding: 1.2em 1.5em;   
+  border: none;   
+  text-transform: UPPERCASE;  
+  font-weight: bold;  
+  color: #fff;    
+  text-decoration:none; 
+  -webkit-transition: background .3s ease; 
+  transition: background .3s ease;
+}
+
+.add-to-cart:hover, .like:hover {   
+  background: #b36800;    
+  color: #fff;    
+  text-decoration:none;
+}
+
+
+ input[type=radio]:checked {
+  color: red;
+ }
