@@ -1,0 +1,42 @@
+.lienhe-tieude{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.lienhe-congty{
+}
+
+.lienhe-diachi {
+}
+.anhdoitac a img {
+	width: 200px;
+	height: 100px;
+}
+.anhdoitac a img:hover{
+	transform: scale(1.08);
+	transition: 0.7s;
+}
+.lienhe-anhbia{
+	height: 400px;
+
+	background-image: url("img/contact.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.lienhe{
+	padding-top: 50px;
+}
+.doitac{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.lienhe-logo img{
+	float: left;
+	width: 300px;	
+}
+
+fieldset input {
+	width: 100%;
+}

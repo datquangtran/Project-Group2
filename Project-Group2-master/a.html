@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<title>Exam</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/examcss.css">
+	<body>
+	<section class="sec sec1">
+    	<div class="container">
+    		<div class="sec1_1">
+    				<a class="fbsec1" href="#"><img src="images/mail.png"></a>
+                    <a class="fbsec1" href="#">burgerking.com</a>
+    				<a class="fbsec1" href="#"><img src="images/telephone.png"></a>
+                    <a class="fbsec1" href="#">453 - 5553 - 966</a>
+    		</div>				
+    		<div class="sec1_2">
+    			<a class="fbsec1" href="#"><img src="images/facebook.png"></a>
+    			<a class="fbsec1" href="#"><img src="images/twitter.png"></a>
+    			<a class="fbsec1" href="#"><img src="images/google.png"></a>
+    			<a class="fbsec1" href="#"><img src="images/instagram.png"></a>
+    		</div>
+    	</div>
+    </section>
+	<section class="sec sec2">
+		<div class="container">
+			<div class"sec sec2_1">
+				<a href="#"><img src="images/burgerKingSlogan_thumb.jpg">  </a>
+			</div>
+		</div>
+	</section>
+	<section class="sec sec3">
+		<div class="container">
+			<div class="information"
+				<p>Đăng ký thông tin người dùng</p>
+				<form method="GET -- POST" action="#" enctype="multipart/form data" name="form data"></br>
+						<p class="sec3a">Họ và tên</br><input class="sizeofform" type="text" name="user_name" class="text-input"/></p></br>
+						<p class="sec3a">Email</br><input class="sizeofform" type="email" name="user_email"/></p></br>
+						<p class="sec3a">Số điện thoại</br><input class="sizeofform" type="number" name="user_number"/></p></br>
+					<div class="gender">
+						<p class="sec3a" >Giới tính</p>
+						<p class="sec3a"><input type="radio" name="user_radio">Nam</p>
+						<p class="sec3a"><input type="radio" name="user_radio">Nữ</p><br>
+					</div>
+					<div class="hobbies">
+						<label><p  class="sec3a">Sở thích</p></label>
+						<p class="sec3a"><input type="checkbox" name="user_hobbies">Bóng đá</p>
+						<p class="sec3a"><input type="checkbox" name="user_hobbies">Đọc sách</p>
+						<p class="sec3a"><input type="checkbox" name="user_hobbies">Âm nhạc</p>
+						<p class="sec3a"><input type="checkbox" name="user_hobbies">Khác:</p><br>
+					</div>
+					<label><p  class="sec3a">Giới thiệu bản thân:</p>
+						<input type="textarea" name="user_intro" style="width: 500px; height: 200px;">
+					</label>
+					<div class="sec3_1">
+						<button class="sec3c" type="submit" href="#">Đăng ký</button></br>
+					</div>
+					<div class="sec3d">
+						<p href="#">Trở lại đăng nhâp</p>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec sec4">
+		<div class="container">
+			<div class="sec4_1">        
+            <a href="#"> <img src="images/burger-king.png" style="width: 150px; height:150px"></a><br>
+        	<a>have it your way</a>
+        </div>
+
+        <div class="sec4_2">
+        	<a class="q">Trần Quang Đạt</a></br>
+            <a class="q">T1810A</a></br>
+            <a class="q">tranquangdat1996@gmail.com</a></br>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+		function checking() {
+			var input_check = document.getElementsByClassName('abc');
+			for (var i = 0; i < input_check.length; i++) {
+				var input_checking = input_check[i];
+				var color = input_checking.value;
+				if(color.length < 1) {
+				input_checking.style.border = '1px solid red';
+				var outer = input_checking.outerHTML;
+				outer += '<span>Vui lòng nhập thông tin </span>';
+				input_checking.outerHTML = outer;
+			} else {
+				input_checking.style.border = '1px solid red';
+			}
+			}
+			var box = document.getElementById('input_check_1');
+			if(box.style.display == 'none'){
+				box.style.display = 'block';
+			}else{
+				box.style.display = 'none';
+			}
+			var name_check = document.getElementById('input_check_1');
+			var color = name_check.value;
+			if(color.length > 50) {
+				input_checking.style.border = '1px solid green';
+				var outer = input_checking.outerHTML;
+				outer += '<span>ten khong qua 50 ki tu </span>';
+				input_checking.outerHTML = outer;
+			}
+		}
+	</script>
+
+</body>
+</html>

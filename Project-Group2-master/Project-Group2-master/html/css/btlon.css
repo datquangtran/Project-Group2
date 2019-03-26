@@ -1,0 +1,32 @@
+.abc{
+	border-right: 1px solid black	;
+	padding-right: 5px;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+
+}
+.footer-container{
+	font-size: 0.7rem;
+	background-color: #444444;
+}
+hr{
+	color: black;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid white;
+}
+.about-apple {
+	color: #fff;
+}
+a{
+	color: white;
+}
+h3{
+	color: white;
+}
+p{
+	color: white;
+}
+

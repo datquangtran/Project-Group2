@@ -1,0 +1,68 @@
+
+.support-bg {
+	position: relative;
+}
+
+
+.h{
+	background-color: blue;
+	height: 300px;
+	background-image: linear-gradient(to right, #4147a7 , #64aad7);
+}
+
+.h_1{
+	text-align: center;
+	padding: 90px 10px 10px 30px;
+	color: #fff;
+
+}
+.h_2{
+	text-align: center;
+}
+
+.sp {
+	width: 100%;
+	height: 340px;
+	background-color: #fff;
+
+}
+
+.support, .icon, .instructions {
+	padding-top: 20px;
+	text-align: center;
+}
+.porm{
+	background-color: black;
+	padding: 1.5em 0 ;
+	text-align: center;
+	letter-spacing: 0.2em;
+}
+
+.porm a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+}
+
+.customer-sp {
+	position: relative;
+	margin-top: -5rem;
+}
+.sp:hover{
+	transform: scale(1.02);
+	transition: 0.5s;
+}
+
+.question{
+	margin-top: 150px;
+} 
+
+.question-title {
+	text-align: center;
+	border-bottom: 3px solid #3399FF;
+	margin-bottom: 20px;
+}
+
+.sp-content {
+	height: 270px;
+}
