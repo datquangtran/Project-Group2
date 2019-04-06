@@ -1,0 +1,29 @@
+.lienhe-tieude{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.lienhe-congty{
+}
+
+.lienhe-diachi {
+}
+.anhdoitac a img {
+	width: 300px;
+	height: 200px;
+}
+.anhdoitac a img:hover{
+	transform: scale(1.08);
+	transition: 0.7s;
+}
+.lienhe-anhbia{
+	height: 400px;
+
+	background-image: url("img/contact.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.lienhe{
+	padding-top: 50px;
+}

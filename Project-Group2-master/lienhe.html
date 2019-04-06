@@ -1,0 +1,136 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/lienhe.css">
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+		<title>Liên hệ</title>
+	</head>
+	<body>
+		<div class="lienhe-anhbia">
+
+		</div>
+		<div class="container">
+			<div class="lienhe">
+				<div class="lienhe-tieude"> 	
+					<h2>LIÊN HỆ</h2>	
+				</div>
+				<div class="lienhe-congty">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="lienhe-logo"><img src="img/logo.png" alt="#"></div>
+						</div>
+						<div class="col-md-8">
+							<div class="lienhe-diachi">
+								<h5>CÔNG TY CỔ PHẦN ĐẦU TƯ PT – TM – DV DU LỊCH VIỆT NAM</h5>
+								<p>Address: 125/37 Đường D1, Phường 25, Quận Bình Thạnh, Hồ Chí Minh</p>
+								<p>Phone: (08) 3840 7177</p>
+								<p>Fax: (08) 3840 7175</p>
+								<p>MAIL: dinh.phamtourist@gmail.com</p>
+								<p>HOTLINE: 0903 093 179</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+
+
+		<div class="container">
+			<div>
+				<form method="get" accept-charset="utf-8" id="form">
+					<fieldset>
+						<div class="row">
+							<div class="col-md-6">
+								<div>
+									<label>Email</label>
+									<input name="email" type="Email" id="mail" placeholder="Vui lòng nhập Email" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<label>Password</label>
+									<input name="ten" type="Password" placeholder="Vui lòng nhập Password" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<label>Họ và Tên</label>
+									<input name="ten" type="text" placeholder="Vui lòng nhập họ và tên" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<label>Địa chỉ</label>
+									<input name="diachi" type="text" placeholder="Vui lòng nhập địa chỉ" required>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div>
+									<label>Góp ý</label>
+									<textarea name="gop" style="width: 100%; height: 60px;"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="submit">
+							<button type="submit">Gửi</button>	
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="doitac">
+				<h5>ĐỐI TÁC CHÚNG TÔI</h5>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="anhdoitac">
+						<a href="#"><img src="img/9.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="anhdoitac">
+						<a href="#"><img src="img/220px-FantaLogo.svg.png" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="anhdoitac">
+						<a href="#"><img src="img/699ava-vja.png" alt="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$("#form").validate({
+					rules: {
+						ho: "required",
+						ten: "required",
+						diachi: {
+							required: true,
+							minlength: 2
+						}
+					},
+					messages: {
+						ho: "Vui lòng nhập họ",
+						ten: "Vui lòng nhập tên",
+						diachi: {
+							required: "Vui lòng nhập địa chỉ",
+							minlength: "Địa chỉ ngắn vậy, chém gió ah?"
+						}
+					}
+				});
+			});
+		</script>
+	</body>
+	</html>
