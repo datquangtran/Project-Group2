@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tạo Image Gallery Đơn Giản Với jQuery</title>
+    <link href="demo.css" rel="stylesheet" type="text/css"/>
+ <link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script type="text/javascript">
+jQuery(document).ready(function(){
+	
+	jQuery('.photo-thumbnails .thumbnail').click(function() {
+		// Setting class "current" to the thumbnail that was clicked.
+		jQuery('.photo-thumbnails .thumbnail').removeClass('current');
+		jQuery(this).addClass('current');
+		// Getting "src" attribute of the image that was clicked.
+		var path = jQuery(this).find('img').attr('src');
+		// Setting "src" attribute of the big image.
+		jQuery('#big-photo img').attr('src', path);
+	});
+		  
+});  
+</script>
+
+
+
+    </head>
+<body style="background:#000;">
+<div style="background:#fff; margin:30px auto; width:65%">
+
+
+
+<div class="gallery-photos clearfix">
+  <div class="photo-thumbnails">
+    <div class="thumbnail current">
+      <div class="thumbnail-inner"> <img src="images/1.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/2.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/3.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/4.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/5.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/6.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/7.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/8.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/9.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/1.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/2.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/3.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/4.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/5.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/6.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/7.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/8.jpg" alt="" /> </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-inner"> <img src="images/9.jpg" alt="" /> </div>
+    </div>
+  </div>
+  <div id="big-photo" class="big-photo"> <img src="images/1.jpg" alt="" /> </div>
+</div>
+
+ 
+<div class="footer-bar">
+    <span class="article-wrapper">
+        <span class="article-label">Xem Bài Viết: </span>
+        <span class="article-link"><a href="http://www.thuthuatweb.net/javacript/tao-image-gallery-don-gian-voi-jquery.html">Tạo Image Gallery Đơn Giản Với jQuery</a></span>
+    </span>
+    
+</div>
+
+</div>
+</body>
+</html>
